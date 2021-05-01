@@ -53,7 +53,7 @@ bool captaDistanciaXicara (){
 void captaTamanhoBebida (float maoVerdeFreeze, float maoVerde, bool isXicara) {
  if(isXicara == true){
   if(maoVerdeFreeze != maoVerde){
-    if(sensorVerde.distance() < 30){
+    if(sensorVerde.distance() > 30){
       posicao(maoVerdePorta, 0);
       delay(2000);
       posicao(maoVerdePorta, 90);
